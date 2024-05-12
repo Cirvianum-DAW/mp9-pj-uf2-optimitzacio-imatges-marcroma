@@ -9,6 +9,35 @@
     <style>
       /* FONT IMPORTS */
       @import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+      
+      @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Apply the animation to all elements */
+    * {
+      animation: fadeIn 1s ease-in-out;
+      animation-fill-mode: backwards;
+    }
+
+    /* Stagger the animation start times */
+    *:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    *:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    *:nth-child(3) {
+      animation-delay: 0.5s;
+    }
     </style>
   </head>
   <body class="mt-[16px] ml-[19px] mr-[30px] font-inter">
@@ -121,5 +150,42 @@
       </p>
     </div>
     <!--  -->
+
+    <!-- FOOTER -->
+    <div class="mt-[50px] flex flex-row justify-between">
+      <div class="text-xs font-inter">
+        <p class="text-lg font-glory font-semibold">Links</p>
+        <a href="index.html">
+          <div>
+            <p class="font-inter font-light">About Me</p>
+          </div>
+        </a>
+
+        <a href="projects.html">
+          <div>
+            <p class="font-inter font-light">Projects</p>
+          </div>
+        </a>
+
+        <a href="contact.html">
+          <div>
+            <p class="font-inter font-light">Contact</p>
+          </div>
+        </a>
+
+        <a href="contact.html">
+          <div>
+            <p class="font-inter font-light">Licensing</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-xs font-inter font-light">
+        <p class="text-lg font-glory font-semibold">Conditions</p>
+        <p>© 2024 Marc Roma</p>
+        <p>Designed & Developed by Marc Roma.</p>
+        <p>All rights reserved.</p>
+      </div>
+      <!--  -->
   </body>
 </html>
